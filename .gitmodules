@@ -1,0 +1,7 @@
+[submodule "LRAA"]
+	path = LRAA
+	url = git@github.com:MethodsDev/LongReadAlignmentAssembler.git
+[submodule "TransDecoder"]
+	path = TransDecoder
+	url = git@github.com:TransDecoder/TransDecoder.git
+	branch = devel
