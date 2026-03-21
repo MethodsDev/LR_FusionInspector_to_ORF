@@ -1,0 +1,1 @@
+/home/unix/bhaas/GITHUB/CTAT_FUSIONS/FusionInspector/FusionInspector --fusion_contigs_only --left_fq data/example_Cosmic_fusion_reads.Kinnex.fastq.gz --vis --fusions data/fusions.list --read_type long

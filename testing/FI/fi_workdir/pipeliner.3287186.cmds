@@ -1,0 +1,3 @@
+/usr/local/bin/minimap2 -ax splice -t 4 -G 100000 -uf --MD -L  --junc-bed /home/unix/bhaas/projects/GITHUB/MDL/LR_FusionInspector_to_ORF/testing/FI/fi_workdir/finspector.gtf.splice.bed  -x splice  /home/unix/bhaas/projects/GITHUB/MDL/LR_FusionInspector_to_ORF/testing/FI/fi_workdir/finspector.fa.mmi /home/unix/bhaas/projects/GITHUB/MDL/LR_FusionInspector_to_ORF/testing/data/example_Cosmic_fusion_reads.Kinnex.fastq.gz  | samtools sort -@ 4 -m 4G -o Aligned.sortedByCoord.out.bam - 
+mv Aligned.sortedByCoord.out.bam finspector.minimap2.sortedByCoord.out.bam
+samtools index finspector.minimap2.sortedByCoord.out.bam

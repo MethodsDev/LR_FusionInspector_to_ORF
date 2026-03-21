@@ -1,0 +1,180 @@
+{
+  "fusions": [
+    {
+      "Annotations": "[\"NPM1:Oncogene\",\"NPM1:OncomapV4_panel\",\"NPM1:ArcherDX_panel\",\"NPM1:FoundationOne_panel\"];[\"ALK:Oncogene\",\"ALK:FoundationOne_panel\",\"ALK:ArcherDX_panel\"];[\"Mitelman\",\"ChimerKB\",\"ChimerSeq\",\"CCLE_StarF2019\",\"Klijn_CellLines\",\"chimerdb_omim\",\"chimerdb_pubmed\",\"ChimerPub\",\"Cosmic\"];INTERCHROMOSOMAL[chr5--chr2]",
+      "Fusion": "NPM1--ALK",
+      "Junction Reads": "459",
+      "Left Breakpoint": "chr5:171391799:+",
+      "Left Gene": "NPM1",
+      "Right Breakpoint": "chr2:29223528:-",
+      "Right Gene": "ALK",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"FGFR3:Oncogene\",\"FGFR3:ArcherDX_panel\",\"FGFR3:FoundationOne_panel\",\"FGFR3:OncomapV4_panel\",\"FGFR3:OncocartaV1_panel\"];[\"TACC3:Oncogene\"];[\"ChimerKB\",\"ChimerSeq\",\"TCGA_StarF2019\",\"CCLE_StarF2019\",\"YOSHIHARA_TCGA\",\"Klijn_CellLines\",\"DEEPEST2019\",\"GUO2018CR_TCGA\",\"ChimerPub\",\"TumorFusionsNAR2018\",\"Cosmic\"];INTRACHROMOSOMAL[chr4:0.05Mb];LOCAL_REARRANGEMENT:+:[48131]",
+      "Fusion": "FGFR3--TACC3",
+      "Junction Reads": "339",
+      "Left Breakpoint": "chr4:1806934:+",
+      "Left Gene": "FGFR3",
+      "Right Breakpoint": "chr4:1739702:+",
+      "Right Gene": "TACC3",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"FGFR3:Oncogene\",\"FGFR3:ArcherDX_panel\",\"FGFR3:FoundationOne_panel\",\"FGFR3:OncomapV4_panel\",\"FGFR3:OncocartaV1_panel\"];[\"TACC3:Oncogene\"];[\"ChimerKB\",\"ChimerSeq\",\"TCGA_StarF2019\",\"CCLE_StarF2019\",\"YOSHIHARA_TCGA\",\"Klijn_CellLines\",\"DEEPEST2019\",\"GUO2018CR_TCGA\",\"ChimerPub\",\"TumorFusionsNAR2018\",\"Cosmic\"];INTRACHROMOSOMAL[chr4:0.05Mb];LOCAL_REARRANGEMENT:+:[48131]",
+      "Fusion": "FGFR3--TACC3",
+      "Junction Reads": "1",
+      "Left Breakpoint": "chr4:1806683:+",
+      "Left Gene": "FGFR3",
+      "Right Breakpoint": "chr4:1739702:+",
+      "Right Gene": "TACC3",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"MCPH1:Oncogene\"];[\"ChimerKB\",\"Klijn_CellLines\",\"DEEPEST2019\",\"Cosmic\",\"CCLE_StarF2019\"];INTRACHROMOSOMAL[chr8:0.06Mb];LOCAL_REARRANGEMENT:+:[59853]",
+      "Fusion": "AGPAT5--MCPH1",
+      "Junction Reads": "81",
+      "Left Breakpoint": "chr8:6741751:+",
+      "Left Gene": "AGPAT5",
+      "Right Breakpoint": "chr8:6642994:+",
+      "Right Gene": "MCPH1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"MCPH1:Oncogene\"];[\"ChimerKB\",\"Klijn_CellLines\",\"DEEPEST2019\",\"Cosmic\",\"CCLE_StarF2019\"];INTRACHROMOSOMAL[chr8:0.06Mb];LOCAL_REARRANGEMENT:+:[59853]",
+      "Fusion": "AGPAT5--MCPH1",
+      "Junction Reads": "1",
+      "Left Breakpoint": "chr8:6732650:+",
+      "Left Gene": "AGPAT5",
+      "Right Breakpoint": "chr8:6642994:+",
+      "Right Gene": "MCPH1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"Cosmic\",\"CCLE_StarF2019\"];INTERCHROMOSOMAL[chr19--chr6]",
+      "Fusion": "EIF3K--CYP39A1",
+      "Junction Reads": "54",
+      "Left Breakpoint": "chr19:38632678:+",
+      "Left Gene": "EIF3K",
+      "Right Breakpoint": "chr6:46639668:-",
+      "Right Gene": "CYP39A1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"Cosmic\",\"CCLE_StarF2019\"];INTERCHROMOSOMAL[chr19--chr6]",
+      "Fusion": "EIF3K--CYP39A1",
+      "Junction Reads": "9",
+      "Left Breakpoint": "chr19:38632678:+",
+      "Left Gene": "EIF3K",
+      "Right Breakpoint": "chr6:46639608:-",
+      "Right Gene": "CYP39A1",
+      "Spanning Fragments": "0",
+      "Splice Type": "INCL_NON_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"Cosmic\",\"CCLE_StarF2019\"];INTERCHROMOSOMAL[chr19--chr6]",
+      "Fusion": "EIF3K--CYP39A1",
+      "Junction Reads": "2",
+      "Left Breakpoint": "chr19:38632496:+",
+      "Left Gene": "EIF3K",
+      "Right Breakpoint": "chr6:46639668:-",
+      "Right Gene": "CYP39A1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"DEEPEST2019\",\"Cosmic\",\"CCLE_StarF2019\"];INTRACHROMOSOMAL[chr2:0.21Mb]",
+      "Fusion": "PLA2R1--RBMS1",
+      "Junction Reads": "40",
+      "Left Breakpoint": "chr2:159976068:-",
+      "Left Gene": "PLA2R1",
+      "Right Breakpoint": "chr2:160303487:-",
+      "Right Gene": "RBMS1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"TMPRSS2:FoundationOne_panel\",\"TMPRSS2:Oncogene\",\"TMPRSS2:ArcherDX_panel\"];[\"ERG:FoundationOne_panel\",\"ERG:ArcherDX_panel\",\"ERG:Oncogene\"];[\"ChimerKB\",\"Larsson_TCGA\",\"ChimerSeq\",\"TCGA_StarF2019\",\"CCLE_StarF2019\",\"YOSHIHARA_TCGA\",\"chimerdb_pubmed\",\"DEEPEST2019\",\"GUO2018CR_TCGA\",\"ChimerPub\",\"TumorFusionsNAR2018\",\"Cosmic\"];INTRACHROMOSOMAL[chr21:2.80Mb]",
+      "Fusion": "TMPRSS2--ERG",
+      "Junction Reads": "15",
+      "Left Breakpoint": "chr21:41507950:-",
+      "Left Gene": "TMPRSS2",
+      "Right Breakpoint": "chr21:38445621:-",
+      "Right Gene": "ERG",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"TMPRSS2:FoundationOne_panel\",\"TMPRSS2:Oncogene\",\"TMPRSS2:ArcherDX_panel\"];[\"ERG:FoundationOne_panel\",\"ERG:ArcherDX_panel\",\"ERG:Oncogene\"];[\"ChimerKB\",\"Larsson_TCGA\",\"ChimerSeq\",\"TCGA_StarF2019\",\"CCLE_StarF2019\",\"YOSHIHARA_TCGA\",\"chimerdb_pubmed\",\"DEEPEST2019\",\"GUO2018CR_TCGA\",\"ChimerPub\",\"TumorFusionsNAR2018\",\"Cosmic\"];INTRACHROMOSOMAL[chr21:2.80Mb]",
+      "Fusion": "TMPRSS2--ERG",
+      "Junction Reads": "2",
+      "Left Breakpoint": "chr21:41507950:-",
+      "Left Gene": "TMPRSS2",
+      "Right Breakpoint": "chr21:38474121:-",
+      "Right Gene": "ERG",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"TMPRSS2:FoundationOne_panel\",\"TMPRSS2:Oncogene\",\"TMPRSS2:ArcherDX_panel\"];[\"ERG:FoundationOne_panel\",\"ERG:ArcherDX_panel\",\"ERG:Oncogene\"];[\"ChimerKB\",\"Larsson_TCGA\",\"ChimerSeq\",\"TCGA_StarF2019\",\"CCLE_StarF2019\",\"YOSHIHARA_TCGA\",\"chimerdb_pubmed\",\"DEEPEST2019\",\"GUO2018CR_TCGA\",\"ChimerPub\",\"TumorFusionsNAR2018\",\"Cosmic\"];INTRACHROMOSOMAL[chr21:2.80Mb]",
+      "Fusion": "TMPRSS2--ERG",
+      "Junction Reads": "1",
+      "Left Breakpoint": "chr21:41506445:-",
+      "Left Gene": "TMPRSS2",
+      "Right Breakpoint": "chr21:38445621:-",
+      "Right Gene": "ERG",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"TumorFusionsNAR2018\",\"Cosmic\",\"TCGA_StarF2019\",\"CCLE_StarF2019\"];INTRACHROMOSOMAL[chr3:0.04Mb];LOCAL_REARRANGEMENT:-:[40974]",
+      "Fusion": "PLXND1--TMCC1",
+      "Junction Reads": "5",
+      "Left Breakpoint": "chr3:129574336:-",
+      "Left Gene": "PLXND1",
+      "Right Breakpoint": "chr3:129671264:-",
+      "Right Gene": "TMCC1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"TumorFusionsNAR2018\",\"Cosmic\",\"TCGA_StarF2019\",\"CCLE_StarF2019\"];INTRACHROMOSOMAL[chr3:0.04Mb];LOCAL_REARRANGEMENT:-:[40974]",
+      "Fusion": "PLXND1--TMCC1",
+      "Junction Reads": "1",
+      "Left Breakpoint": "chr3:129575766:-",
+      "Left Gene": "PLXND1",
+      "Right Breakpoint": "chr3:129671264:-",
+      "Right Gene": "TMCC1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"ChimerKB\",\"Klijn_CellLines\",\"TumorFusionsNAR2018\",\"Cosmic\",\"TCGA_StarF2019\",\"CCLE_StarF2019\"];INTRACHROMOSOMAL[chr3:0.04Mb];LOCAL_REARRANGEMENT:-:[40974]",
+      "Fusion": "PLXND1--TMCC1",
+      "Junction Reads": "1",
+      "Left Breakpoint": "chr3:129578329:-",
+      "Left Gene": "PLXND1",
+      "Right Breakpoint": "chr3:129671264:-",
+      "Right Gene": "TMCC1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    },
+    {
+      "Annotations": "[\"BCR:Oncogene\",\"BCR:FoundationOne_panel\",\"BCR:ArcherDX_panel\"];[\"ABL1:Oncogene\",\"ABL1:FoundationOne_panel\",\"ABL1:OncomapV4_panel\",\"ABL1:OncocartaV1_panel\"];[\"Mitelman\",\"ChimerKB\",\"ChimerSeq\",\"TCGA_StarF2019\",\"CCLE_StarF2019\",\"Klijn_CellLines\",\"chimerdb_pubmed\",\"chimerdb_omim\",\"DEEPEST2019\",\"GUO2018CR_TCGA\",\"ChimerPub\",\"TumorFusionsNAR2018\",\"Cosmic\"];INTERCHROMOSOMAL[chr22--chr9]",
+      "Fusion": "BCR--ABL1",
+      "Junction Reads": "2",
+      "Left Breakpoint": "chr22:23290413:+",
+      "Left Gene": "BCR",
+      "Right Breakpoint": "chr9:130854064:+",
+      "Right Gene": "ABL1",
+      "Spanning Fragments": "0",
+      "Splice Type": "ONLY_REF_SPLICE"
+    }
+  ]
+}
