@@ -1,0 +1,8 @@
+version: 1.2
+workflows:
+   - name: LR_FusionInspector_to_ORF
+     subclass: WDL
+     primaryDescriptorPath: /WDL/LR_FusionInspector_to_ORF.wdl
+     authors:
+         - name: Brian Haas
+           email: bhaas@broadinstitute.org
