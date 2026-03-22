@@ -160,9 +160,13 @@ def main():
 
     lraa_cmd = [
         args.lraa,
-        "--genome", args.genome,
-        "--bam", args.bam,
+        "--genome",
+        args.genome,
+        "--bam",
+        args.bam,
         "--ME_only",
+        "--min_reads_novel",
+        "1",
     ]
     if args.HiFi:
         lraa_cmd.append("--HiFi")
@@ -183,10 +187,14 @@ def main():
     with open(ref_pep, "w") as pep_fh:
         logger.info("Running: extract reference peptides from finspector.gtf")
         gtf_pep_cmd = [
-            "perl", args.gtf_to_feature_seqs,
-            "--gtf_file", args.gtf,
-            "--genome_fa", args.genome,
-            "--seqType", "prot",
+            "perl",
+            args.gtf_to_feature_seqs,
+            "--gtf_file",
+            args.gtf,
+            "--genome_fa",
+            args.genome,
+            "--seqType",
+            "prot",
         ]
         logger.info("CMD: %s > %s", " ".join(gtf_pep_cmd), ref_pep)
         subprocess.run(gtf_pep_cmd, stdout=pep_fh, check=True)
@@ -200,10 +208,14 @@ def main():
     # -------------------------------------------------------------------------
     transdecoder_cmd = [
         args.transdecoder,
-        "--genome", args.genome,
-        "--gtf", lraa_gtf,
-        "--blast_search_pep", ref_pep,
-        "--blast_threads", str(args.blast_threads),
+        "--genome",
+        args.genome,
+        "--gtf",
+        lraa_gtf,
+        "--blast_search_pep",
+        ref_pep,
+        "--blast_threads",
+        str(args.blast_threads),
         "--no_refine_starts",
         "--single_best_only",
     ]
