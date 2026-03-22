@@ -68,8 +68,8 @@ def parse_args():
     )
     parser.add_argument(
         "--fusions_tsv",
-        default=None,
-        help="Optional FusionInspector fusions abridged TSV used to annotate whether predicted ORFs span the fusion breakpoint",
+        required=True,
+        help="FusionInspector fusions abridged TSV used to annotate whether predicted ORFs span the fusion breakpoint",
     )
 
     # Output
@@ -133,7 +133,7 @@ def validate_paths(args):
     ]:
         if not os.path.exists(path):
             errors.append(f"{label}: path not found: {path}")
-    if args.fusions_tsv and not os.path.exists(args.fusions_tsv):
+    if not os.path.exists(args.fusions_tsv):
         errors.append(f"--fusions_tsv: path not found: {args.fusions_tsv}")
     if errors:
         for e in errors:
@@ -404,8 +404,7 @@ def main():
     args.genome = os.path.abspath(args.genome)
     args.bam = os.path.abspath(args.bam)
     args.gtf = os.path.abspath(args.gtf)
-    if args.fusions_tsv:
-        args.fusions_tsv = os.path.abspath(args.fusions_tsv)
+    args.fusions_tsv = os.path.abspath(args.fusions_tsv)
     args.lraa = os.path.abspath(os.path.expanduser(args.lraa))
     args.gtf_to_feature_seqs = os.path.abspath(
         os.path.expanduser(args.gtf_to_feature_seqs)
@@ -489,18 +488,17 @@ def main():
 
     run_cmd(transdecoder_cmd, "TransDecoder: predict ORFs in fusion transcripts")
 
-    if args.fusions_tsv:
-        annotate_orf_breakpoint_spanning(
-            lraa_gtf=lraa_gtf,
-            fusions_tsv=args.fusions_tsv,
-            transdecoder_genome_gff3=os.path.join(
-                output_dir, "LRAA.cDNA.fasta.transdecoder.genome.gff3"
-            ),
-            transdecoder_pep=os.path.join(
-                output_dir, "LRAA.cDNA.fasta.transdecoder.pep"
-            ),
-            output_tsv=os.path.join(output_dir, "fusion_orf_breakpoint_annotations.tsv"),
-        )
+    annotate_orf_breakpoint_spanning(
+        lraa_gtf=lraa_gtf,
+        fusions_tsv=args.fusions_tsv,
+        transdecoder_genome_gff3=os.path.join(
+            output_dir, "LRAA.cDNA.fasta.transdecoder.genome.gff3"
+        ),
+        transdecoder_pep=os.path.join(
+            output_dir, "LRAA.cDNA.fasta.transdecoder.pep"
+        ),
+        output_tsv=os.path.join(output_dir, "fusion_orf_breakpoint_annotations.tsv"),
+    )
 
     logger.info("Pipeline complete. Results in: %s", output_dir)
 
