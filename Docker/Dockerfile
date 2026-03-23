@@ -34,12 +34,24 @@ RUN ln -sf /usr/bin/python3 /usr/bin/python && \
     cpanm --notest DB_File URI::Escape
 
 RUN python3 -m pip install --break-system-packages \
+    argparse \
     intervaltree \
     lmdb \
     networkx \
+    numpy \
     psutil \
     pysam \
     tqdm
+
+RUN apt-get -qq update && apt-get -qq -y install --no-install-recommends \
+    libigraph-dev \
+    libxml2-dev && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install --break-system-packages \
+    igraph==0.11.4 \
+    leidenalg==0.10.2
 
 ENV APP_HOME=/opt/LR_FusionInspector_to_ORF
 ENV LRAA_DIR=${APP_HOME}/LRAA
@@ -64,4 +76,4 @@ RUN chmod +x ${APP_HOME}/LR_FusionInspector_to_ORF.py \
 
 ENV PATH="${APP_HOME}:${LRAA_DIR}:${LRAA_DIR}/util:${LRAA_DIR}/util/misc:${TRANSDECODER_DIR}:${PATH}"
 
-ENTRYPOINT ["python3", "/opt/LR_FusionInspector_to_ORF/LR_FusionInspector_to_ORF.py"]
+#ENTRYPOINT ["python3", "/opt/LR_FusionInspector_to_ORF/LR_FusionInspector_to_ORF.py"]

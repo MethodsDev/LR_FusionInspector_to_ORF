@@ -1,0 +1,5 @@
+{
+  "LR_FusionInspector_to_ORF_wf.igv_inputs_tar_gz": "FI/IGV_inputs.tar.gz",
+  "LR_FusionInspector_to_ORF_wf.fusions_tsv": "FI/finspector.FusionInspector.fusions.abridged.tsv",
+  "LR_FusionInspector_to_ORF_wf.output_dir": "miniwdl_test_outdir"
+}
