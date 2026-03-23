@@ -10,7 +10,7 @@ workflow LR_FusionInspector_to_ORF_wf {
         Int blast_threads = 1
         String output_dir = "LR_FusionInspector_to_ORF_outdir"
 
-        String docker = "lr_fusioninspector_to_orf:latest"
+        String docker = "trinityctat/lr_fusioninspector_to_orf:latest"
     }
 
     call LR_FusionInspector_to_ORF_task {
